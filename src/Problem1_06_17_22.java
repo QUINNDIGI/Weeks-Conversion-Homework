@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class June17_2022 {
+public class Problem1_06_17_22 {
 
     public static void main(String[] args) {
 
