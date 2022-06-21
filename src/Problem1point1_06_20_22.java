@@ -8,19 +8,21 @@ public class Problem1point1_06_20_22 {
         System.out.print("Please enter a positive integer: ");
         int n = input.nextInt();
 
-        int arr[] = new int[n];
+        while (n <= 0) {
+            System.out.print("Please enter a positive integer: ");
+            n = input.nextInt();
+        }
+
+        int[] arr = new int[n];
         double average = 0.0;
         double total = 0.0;
-
-
 
 
         System.out.print("Please enter " + n + " positive integer(s): ");
 
 
         for (int i = 0; i < arr.length; i++) {
-            int nIntegers = input.nextInt();
-            arr[i] = nIntegers;
+            arr[i] = input.nextInt();
             System.out.print(arr[i] + " ");
 
         }
@@ -29,10 +31,10 @@ public class Problem1point1_06_20_22 {
         //Max
         int max = arr[0];
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max)
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
                 max = arr[i];
-
+            }
         }
         System.out.println("Maximum value: " + max);
 
@@ -40,9 +42,9 @@ public class Problem1point1_06_20_22 {
         int min = arr[0];
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min)
+            if (arr[i] < min) {
                 min = arr[i];
-
+            }
         }
         System.out.println("Minimum value: " + min);
 
@@ -65,11 +67,11 @@ public class Problem1point1_06_20_22 {
         //Elements greater than last element
         System.out.println();
         System.out.println("Elements greater than " + (arr[arr.length - 1]) + ":");
-            for (int i = 0; i < arr.length - 1; i++) {
-                if (arr[i] > arr[arr.length - 1]);
-                System.out.print(arr[i] + " ");
-            }
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[arr.length - 1]) ;
+            System.out.print(arr[i] + " ");
         }
     }
+}
 
 

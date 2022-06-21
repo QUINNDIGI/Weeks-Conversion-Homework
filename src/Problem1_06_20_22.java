@@ -12,7 +12,7 @@ public class Problem1_06_20_22 {
         if (n >= 1 && n <= 20) {
 
 
-            int arr[] = new int[n];
+            int[] arr = new int[n];
 
             for (int i = 0; i < arr.length; i++) {
 
