@@ -54,8 +54,10 @@ public class Problem1point1_06_20_22 {
             total += arr[i];
         }
         average = total / n;
-        System.out.println("Average: " + average);
+        System.out.print("Average: " + average);
+//        System.out.printf("Average: %.1f", average);
 
+        System.out.println();
         //Elements Greater Than Avg
         System.out.println("Elements greater than average: ");
         for (int i = 0; i < arr.length; i++) {
@@ -67,8 +69,16 @@ public class Problem1point1_06_20_22 {
         //Elements greater than last element
         System.out.println();
         System.out.println("Elements greater than " + (arr[arr.length - 1]) + ":");
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] > arr[arr.length - 1]) ;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > arr[arr.length - 1]) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+        //Array in reverse order
+        System.out.println();
+        System.out.println("Array in reverse order: ");
+        for (int i = arr.length - 1; i >= 0; i--) {
             System.out.print(arr[i] + " ");
         }
     }
