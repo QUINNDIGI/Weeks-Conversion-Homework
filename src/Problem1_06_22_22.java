@@ -31,7 +31,7 @@ public class Problem1_06_22_22 {
         System.out.println("Number of times subsequent value increases: " + countInc(arr));
         System.out.println("Number of times subsequent value decreases: " + countDec(arr));
         System.out.println("Array with 3 elements per line: ");
-        System.out.print(printArray3PerLn(arr));
+        printArray3PerLn(arr);
 
 
     }
@@ -115,14 +115,14 @@ public class Problem1_06_22_22 {
         System.out.println(arr);
     }
 
-    public static String printArray3PerLn(int[] arr) {
+    public static void printArray3PerLn(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
 
             if ((i + 1) % 3 == 0 ) {
                 System.out.println();
             }
-        } return "";
+        }
     }
 
 
